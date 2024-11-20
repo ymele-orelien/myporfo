@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/font/css/all.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Ymele Orelien / Portfolio</title>
+</head>
+
+<body>
+    <!-- SECTION DU HEADER (ENTETE) -->
+    <header>
+        <div id="menu" class="fa-solid fa-bars" onclick="voir()" style="margin-right: 0.5rem;"></div>
+
+        <a href="#" class="logo">YME<span>LE</span> .O</a>
+        <nav class="nav-bars">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#porfolio">Porfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Hamburger -->
+    <div class="bars" id="nav">
+        <a href="#" class="close-btn" onclick="cacher()">X</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#porfolio">Porfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- SECTION HOME -->
+    <section id="home" class="home reveal">
+        <div class="home-text">
+            <div class="slide">
+                <span class="one">Hello</span>
+                <span class="two">I'M</span>
+            </div>
+            <h1>YMELE ORELIEN</h1>
+            <h3>Developer / <span>Programmer</span></h3>
+            <p>Developer with 5+ years experience that keeps customers coming back for great services.</p>
+            <div class="button"><a href="#about" class="btn">About Me</a></div>
+        </div>
+    </section>
+
+    <!-- SECTION ABOUT -->
+    <section class="about reveal" id="about">
+        <div class="about-img">
+            <img src="./assets/image/mon2.jpg" alt="Ymele Orelien">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>DEVELOPPER</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla eum fugiat, rem cupiditate alias molestias
+                quia aperiam necessitatibus magni tempora suscipit libero voluptas vel nemo porro cumque, incidunt cum
+                dolorum.
+            </p>
+            <a href="#about" class="btn">More About</a>
+        </div>
+    </section>
+
+    <!-- SECTION SERVICES -->
+    <section class="service reveal" id="services">
+        <div class="main-text">
+            <h2><span>My</span> Services</h2>
+        </div>
+        <div class="services-content">
+            <div class="box">
+                <div class="s-icon">
+                    <i class="fa-solid fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Developer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde mollitia fugit dolores optio voluptate.</p>
+                <a href="#services" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <div class="s-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>Web Developer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, natus velit id quas quis.</p>
+                <a href="#services" class="btn">Read More</a>
+            </div>
+            <div class="box">
+                <div class="s-icon"><i class="fa-solid fa-edit"></i></div>
+                <h3>Creative Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, natus velit id quas quis.</p>
+                <a href="#services" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PORFOLIO -->
+    <section class="porfolio reveal" id="porfolio">
+        <div class="main-text" style="font-size: 40px; position: absolute; font-weight: 700; z-index: 111; width: 90%; padding: 2rem;">
+            Porfolio
+        </div>
+        <div class="row">
+            <img src="./assets/image/personne1.jpg" alt="Project 1">
+            <h5>Visual Design</h5>
+            <div class="layer">
+                <p>Check out 10 Design's update for the top web design & development companies.</p>
+                <a href="#" class="btn"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./assets/image/personne4.jpg" alt="Project 2">
+            <h5>Visual Design</h5>
+            <div class="layer">
+                <p>Check out 10 Design's update for the top web design & development companies.</p>
+                <a href="#" class="btn"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./assets/image/personne3.jpg" alt="Project 3">
+            <h5>Visual Design</h5>
+            <div class="layer">
+                <p>Check out 10 Design's update for the top web design & development companies.</p>
+                <a href="#" class="btn"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact reveal" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me!</span></h2>
+            <h4>If you have any project in mind.</h4>
+            <p>I'm a developer/programmer - creating bold & brave interface designs for companies all across the world.</p>
+            <div class="list">
+                <li><a href="tel:+237652959389">+237 6 52 95 93 89</a></li>
+                <li><a href="mailto:orelienymele@gmail.com">orelienymele@gmail.com</a></li>
+                <li><a href="#">Like, share & subscribe</a></li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://wa.me/+237652959389"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/profilephp?id=100064095662653"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://youtube.com/@yoyo-cree"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/orelien-ymele-595252259/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Mobile Number">
+                <textarea name="message" placeholder="How can I help you?" required></textarea>
+                <input type="submit" value="Send Message" class="submit">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION FOOTER -->
+    <section class="footer reveal">
+        <div class="sociale">Social<span>e</span> Media</div>
+        <div class="media">
+            <a href="https://youtube.com/@yoyo-cree"><i class="fa-brands fa-youtube" style="color: red;"></i></a>
+            <a href="https://www.facebook.com/profilephp?id=100064095662653"><i class="fa-brands fa-facebook" style="color: blue;"></i></a>
+            <a href="https://www.instagram.com/yoyocree/"><i class="fa-brands fa-instagram" style="color: pink;"></i></a>
+            <a href="https://www.tiktok.com/@ourfillsetseries/video/7237213775781448986?_r=1&_t=8ccWAjEBAtv"><i class="fa-brands fa-tiktok" style="color: blueviolet;"></i></a>
+            <a href="https://www.linkedin.com/in/orelien-ymele-595252259/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Designed by Ymele Orelien &copy; 2024. All rights reserved.</p>
+    </section>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
