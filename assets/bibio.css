@@ -1,0 +1,117 @@
+.project{
+    width: 100%;
+ 
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    margin: 1rem 0 1rem 0;
+}.porfolio {
+    background: var(--second-bg);
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .row {
+    position: relative;
+    width: 650px;
+
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .row img {
+    width: 100%;height: auto;
+  object-fit: cover;
+    border-radius: 8px;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    transition: transform 0.5s;
+  }
+  .layer {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #00a6ff);
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+  }
+  
+  .layer h5 {
+    font: 22px;
+    color: #fff !important;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .layer p {
+    color: var(--p-color);
+    line-height: 1.8;
+  }
+  .fa-close{
+    display: none;
+  }
+  .layer i {
+    color: #00a6ff;
+  
+    background: #fff;
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .row:hover .layer {
+    height: 100%;
+  }
+  .row h5{
+    color: #fff;
+  }
+  
+  .layer .btn {
+    background: none;
+  }
+  @media (max-width:1200px) {.porfolio{display: grid;
+    overflow: hidden;
+     grid-template-columns: repeat(2 , 1fr);
+
+  }.row {width: 100%;
+    
+  }
+    
+  }
+  @media (max-width:850px) {.porfolio{display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+
+ }
+ .row{
+    align-items: center;position: relative
+    ;left:6%;
+ }
+   
+ }
+ @media (max-width:650px) {.porfolio{display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+
+ }
+ .row{
+    align-items: center;position: relative
+    ;left:1.5%;
+ }
+ .row img{
+    width: 95%;
+    height: 300px;
+    object-fit: cover !important;
+ }
+   
+ }
